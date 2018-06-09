@@ -1,0 +1,66 @@
+ <!DOCTYPE html>
+ <html>
+     <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+        <title>Calculadora</title>
+        <link rel="stylesheet" href="css/style.css">
+     </head>
+     <body>
+         <div class="container calculator">
+            <div class="row text-center justify-content-center">
+                <div class="col-12">
+                    <input id="elem-1" type="number" />
+                </div>
+                <div class="col-12">
+                    <div class="container operations">
+                        <div class="row align-items-center text-center">
+                            <div class="col operation">
+                                <input type="radio" id="sum-operator" value="+" name="operation" checked>
+                                <label for="sum-operator">+</label>
+                            </div>
+                            <div class="col operation">
+                                <input type="radio" id="subtract-operator" value="-" name="operation">
+                                <label for="subtract-operator">-</label>
+                            </div>
+                            <div class="col operation">
+                                <input type="radio" id="multiply-operator" value="*" name="operation">
+                                <label for="multiply-operator">&times;</label>
+                            </div>
+                        </div>
+                        <div class="row align-items-center text-center">
+                            <div class="col operation">
+                                <input type="radio" id="divide-operator" value="/" name="operation">
+                                <label for="divide-operator">&divide;</label>
+                            </div>
+                            <div class="col operation">
+                                <input type="radio" id="pow-operator" value="^" name="operation">
+                                <label for="pow-operator">x<sup>y</sup></label>
+                            </div>
+                            <div class="col operation">
+                                <input type="radio" id="mod-operator" value="%" name="operation">
+                                <label for="mod-operator">Mod</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <input id="elem-2" type="number" />
+                </div>
+                <div class="col-12">
+                    <button id="calculate-button">=</button>
+                </div>
+                <div class="col-12">
+                    <h2 id="result"></h2>
+                </div>
+            </div>
+         </div>
+         <script src="js/script.js"></script>
+     </body>
+ </html>
